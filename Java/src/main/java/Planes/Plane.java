@@ -16,20 +16,22 @@ abstract public class Plane {
     }
 
     public String getModel() {
+
         return model;
     }
 
-    public int getMS() {
+    public int getMaxSpeed() {
+
         return maxSpeed;
     }
 
-    public int Get_Max_Flight_Distance() {
+    public int getMaxFlightDistance() {
+
         return maxFlightDistance;
     }
 
     public int getMinLoadCapacity() {
-        int result = this.maxLoadCapacity;
-        return result;
+        return this.maxLoadCapacity;
     }
 
     @Override
@@ -55,6 +57,7 @@ abstract public class Plane {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
     }
 }
